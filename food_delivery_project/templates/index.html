@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Food Delivery Time Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Food Delivery Time Prediction</h1>
+
+<form action="/predict" method="post">
+
+<input type="number" name="distance" placeholder="Distance (km)" required>
+
+<input type="number" name="prep" placeholder="Preparation Time (min)" required>
+
+<input type="number" name="exp" placeholder="Courier Experience (years)" required>
+
+<select name="weather">
+<option value="Clear">Weather : Clear</option>
+<option value="Foggy">Foggy</option>
+<option value="Rainy">Rainy</option>
+<option value="Snowy">Snowy</option>
+<option value="Windy">Windy</option>
+</select>
+
+<select name="traffic">
+<option value="Low">Traffic : Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select>
+
+<select name="time">
+<option value="Morning">Morning</option>
+<option value="Evening">Evening</option>
+<option value="Night">Night</option>
+</select>
+
+<select name="vehicle">
+<option value="Bike">Bike</option>
+<option value="Car">Car</option>
+<option value="Scooter">Scooter</option>
+</select>
+
+<button type="submit">Predict Delivery Time</button>
+
+</form>
+
+<div class="result">
+{{ prediction_text }}
+</div>
+
+</div>
+
+</body>
+</html>
