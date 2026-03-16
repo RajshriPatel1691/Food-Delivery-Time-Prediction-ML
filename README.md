@@ -92,7 +92,7 @@ The model explains **83% variance in delivery time**, indicating good predictive
 
 ## 📷 Project Screenshots
 
-(Add screenshots of your Flask web application here)
+![Food Delivery Prediction](page1.png)
 
 Example:
 
