@@ -93,8 +93,8 @@ The model explains **83% variance in delivery time**, indicating good predictive
 ## 📷 Project Screenshots
 
 ![Food Delivery Prediction](Page1.png)
-![ Input Form](Page2.png)
-![Prediction Result](Page3.png)
+![ Input Form](page2.png)
+![Prediction Result](page3.png)
 
 
 ---
